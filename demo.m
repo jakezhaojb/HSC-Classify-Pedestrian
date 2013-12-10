@@ -37,14 +37,13 @@ Prep_tr_te(220);         % In our framework, 880 images can be used in the train
 
 % Learning the Dictionary, using K-SVD
 % Bear in mind that this may take some time to finish.
-if Dic_Learn_KSVD('Samples/sample_tr_trun.mat','Samples/Dic.mat')
+if dic_learn_ksvd('Samples/sample_tr_trun.mat','Samples/Dic.mat')
     disp('The dictionary learning by KSVD is Ok')
 else
-    disp('Dic Learning is failed.')
+    disp('The dictionary Learning by KVD is failed.')
     pause;
 end
 
-disp('Dic learnig is done!!!!')
 
 clear 
 % Histograms of Sparse Coding model
