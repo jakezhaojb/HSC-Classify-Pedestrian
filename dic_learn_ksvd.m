@@ -1,4 +1,4 @@
-function flag = Dic_Learn_KSVD(datafile, resfile)
+function flag = dic_learn_ksvd(datafile, resfile)
 if exist(resfile,'file')
     flag = true;
     return
